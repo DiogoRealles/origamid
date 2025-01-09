@@ -105,7 +105,7 @@
   </head>
 
   <body class="bg-verde-800 font-sans">
-    <div class="container mt-4 flex justify-center md:justify-start">
+    <!-- <div class="container mt-4 flex justify-center md:justify-start">
       <div class="inline-flex items-center rounded-md bg-verde-900">
         <span
           class="size-2 bg-verde-300 block rounded-full relative -left-1"
@@ -117,9 +117,9 @@
           <div class="px-4 py-2 capitalize" id="weather">🌤️</div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <header class="container flex items-center justify-between gap-8 py-8">
+    <!-- <header class="container flex items-center justify-between gap-8 py-8">
       <a href="" class="">
         <img src="./img/forest.svg" alt="Forest" />
       </a>
@@ -151,11 +151,11 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
-    <main class="container">
+    <!-- <main class="container">
       <div
-        class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden"
+        class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12"
       >
         <img
           class="absolute inset-0 size-full object-cover -z-10"
@@ -163,7 +163,7 @@
           alt=""
         />
         <div
-          class="bg-verde-950 inline-flex mb-8 gap-8 items-center py-1 pl-4 pr-1 rounded-full"
+          class="bg-verde-950/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-verde-950 sm:inline-flex sm:flex-row sm:rounded-full"
         >
           Vagas para dezembro aberta
           <a
@@ -173,12 +173,14 @@
           >
         </div>
 
-        <h1 class="mb-20 font-serif text-balance max-w-screen-sm text-5xl">
+        <h1
+          class="mb-8 font-serif text-balance max-w-screen-sm text-4xl sm:mb-20 sm:text-5xl"
+        >
           Venha Experimentar a Vida na Floresta
         </h1>
 
-        <div class="text-sm flex justify-between items-end">
-          <p class="">
+        <div class="text-sm sm:flex justify-between items-end">
+          <p class="max-sm:mb-4">
             Melhores locais para visitar
             <a
               href=""
@@ -201,6 +203,83 @@
           </div>
         </div>
       </div>
-    </main>
+    </main> -->
+
+    <section
+      id="accommodation"
+      class="container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16"
+    >
+      <div
+        class="content-end bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom"
+      >
+        <h2 class="text-white mb-8 text-4xl font-serif lg:text-5xl capitalize">
+          Refúgio natural
+        </h2>
+
+        <ul
+          class="text-gray-200 *:flex *:items-center *:gap-4 grid gap-4 sm:text-xl"
+        >
+          <li class="">
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            Experimente a natureza de perto
+          </li>
+          <li class="">
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            Conecte-se com a natureza
+          </li>
+          <li class="">
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            Desconecte-se do digital
+          </li>
+          <li class="">
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            Observe a vida selvagem
+          </li>
+          <li class="">
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            Escolha a sua cabine preferida
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+        <div class="col-span-full grid *:col-start-1 *:row-start-1">
+          <img
+            src="./img/casa1.jpg"
+            alt="Casa 01"
+            class="h-52 size-full object-cover rounded-xl"
+          />
+
+          <span
+            class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none"
+            >Ruby</span
+          >
+        </div>
+        <div class="grid *:col-start-1 *:row-start-1">
+          <img
+            src="./img/casa2.jpg"
+            alt="Casa 02"
+            class="size-full object-cover rounded-xl"
+          />
+
+          <span
+            class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none"
+            >Emerald</span
+          >
+        </div>
+        <div class="grid *:col-start-1 *:row-start-1">
+          <img
+            src="./img/casa3.jpg"
+            alt="Casa 03"
+            class="size-full object-cover rounded-xl"
+          />
+
+          <span
+            class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none"
+            >Saphire</span
+          >
+        </div>
+      </div>
+    </section>
   </body>
 </html>
