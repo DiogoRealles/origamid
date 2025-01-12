@@ -25,16 +25,16 @@ const fruits1: string[] = ['apple', 'banana', 'cherry', 'damasco'];
 console.log(fruits1);
 
 // ARRAY NUMBER
-const fruits2: number[] = [5, 3, 7, 9];
-console.log(fruits2);
+const listNumber: number[] = [5, 3, 7, 9];
+console.log(listNumber);
 
 // ARRAY BOOLEAN
-const fruits3: boolean[] = [false, true, false];
-console.log(fruits3);
+const listBoolean: boolean[] = [false, true, false];
+console.log(listBoolean);
 
 // ARRAY TUPLE
-const fruits4: [string, number] = ['', 9];
-console.log(fruits4);
+const fruitNumber: [string, number] = ['Apple', 9];
+console.log(fruitNumber);
 
 // FUNCTION STRING
 const greeting = (name: string): string => {
@@ -81,4 +81,50 @@ console.log(total, typeof total);
 
 // OPTIONAL CHANING
 // const button = document.querySelector('button');
-button?.click();
+// button?.click();
+
+// TYPES
+type TNumberOrString = string | number;
+let total2: TNumberOrString = 30;
+console.log(total2, typeof total2);
+total2 = '37';
+console.log(total2, typeof total2);
+
+type TProduct = {
+  name: string;
+  price: number;
+  keyboard: boolean;
+};
+const computer: TProduct = {
+  name: 'Computador',
+  price: 2000,
+  keyboard: true,
+};
+console.log(computer);
+
+type TCategories = 'design' | 'código' | 'descod';
+const selectCategorie = (categorie: TCategories) => {
+  if (categorie === 'design') {
+    return 'Criativo';
+  } else if (categorie === 'código') {
+    return 'Analítico';
+  } else if (categorie === 'descod') {
+    return 'Criativo & Analítico';
+  }
+};
+console.log(selectCategorie('design'));
+console.log(selectCategorie('código'));
+console.log(selectCategorie('descod'));
+
+// INTERFACE
+interface IProduct {
+  name: string;
+  price: number;
+  keyboard: boolean;
+}
+const computer2: TProduct = {
+  name: 'Computador 2',
+  price: 2002,
+  keyboard: true,
+};
+console.log(computer2);

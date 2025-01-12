@@ -1,0 +1,13 @@
+{
+  "name": "01-intro",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "compile-ts": "tsc -w ./script.ts ",
+    "watch-ts": "tsx --no-warnings --watch ./script.ts "
+  },
+  "keywords": [],
+  "author": "Diogo Realles <diogorealles@hotmail.com> (https://diogorealles.github.io/)",
+  "license": "MIT",
+  "description": ""
+}
