@@ -1,5 +1,5 @@
 {
-  "name": "01-intro",
+  "name": "25-excercises10",
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "Diogo Realles <diogorealles@hotmail.com> (https://diogorealles.github.io/)",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.10"
+  }
 }

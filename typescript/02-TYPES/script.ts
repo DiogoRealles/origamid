@@ -116,7 +116,7 @@ console.log(selectCategorie('design'));
 console.log(selectCategorie('código'));
 console.log(selectCategorie('descod'));
 
-// INTERFACE
+// INTERFACE 01
 interface IProduct {
   name: string;
   price: number;
@@ -128,3 +128,21 @@ const computer2: TProduct = {
   keyboard: true,
 };
 console.log(computer2);
+
+// INTERFACE 02
+interface iCar {
+  wheels: number;
+  doors: number;
+}
+
+interface iCar {
+  price: number;
+}
+
+function handleProduct(car: iCar) {
+  console.log('Wheels:', car.wheels);
+  console.log('Doors:', car.doors);
+  console.log('Price:', car.price);
+}
+
+handleProduct({ doors: 4, price: 30000, wheels: 4 });
